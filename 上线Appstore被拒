@@ -1,0 +1,37 @@
+2017年7月2日 上午1:17
+发件人 Apple
+2. 5 Performance: Software Requirements
+Guideline 2.5.4 - Performance - Software Requirements
+
+
+Your app declares support for location in the UIBackgroundModes key in your Info.plist file but does not have any features that require persistent location. Apps that declare support for location in the UIBackgroundModes key in your Info.plist file must have features that require persistent location.
+
+Next Steps
+
+To resolve this issue, please revise your app to include features that require the persistent use of real-time location updates while the app is in the background.
+
+If your app does not require persistent real-time location updates, please remove the "location" setting from the UIBackgroundModes key. You may wish to use the significant-change location service or the region monitoring location service if persistent real-time location updates are not required for your app features.
+
+Resources
+
+For more information, please review the Starting the Significant-Change Location Service and Monitoring Geographical Regions.
+
+Request a phone call from App Review
+
+At your request, we can arrange for an Apple Representative to call you within the next three business days to discuss your App Review issue. Our representative will be able to discuss the issue in English or Chinese.
+
+To request a call and ensure we have accurate contact information, reply directly to this message with a contact name and direct phone number to reach you.
+
+申请应用审核团队致电联系
+
+如果您有需要，我们将根据您的要求在三个工作日内安排一位精通中文的苹果公司代表致电与您联系，讨论您的应用审核结果。
+为了确保我们有正确的联系资料，请回复这封邮件并提供您的姓名与电话号码。
+
+申請應用審核團隊致電聯繫
+
+如果您有需要，我們將根據您的要求在三個工作日內安排一位精通中文的蘋果公司代表致電與您聯繫，討論您的應用審核結果。
+為了確保我們有正確的聯繫資料，請回覆這封郵件並提供您的姓名與電話號碼。
+
+总结 ：
+1.删除 UIBackgroundModes 项 ，项目中未使用后台功能。
+2.误增加的选项，需要做上线前检查。
